@@ -18,7 +18,7 @@ class RapidjsonadapterConan(ConanFile):
 
     def source(self):
         git = tools.Git(folder=self.sources_folder)
-        git.clone("https://github.com/systelab/cpp-rapidjson-json-adapter.git", "static_shared")
+        git.clone("https://github.com/systelab/cpp-rapidjson-json-adapter.git", "master")
 
     def build(self):
         cmake = CMake(self)
