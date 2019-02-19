@@ -7,7 +7,7 @@ environment:
     CONAN_USERNAME: "joaquimvila"
     CONAN_LOGIN_USERNAME: "joaquimvila"
     CONAN_CHANNEL: "testing"
-    CONAN_UPLOAD: "https://dl.bintray.com/joaquimvila/rapidjson-adapter"
+    CONAN_UPLOAD: "https://bintray.com/joaquimvila/rapidjson-adapter"
 
     matrix:
         - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
