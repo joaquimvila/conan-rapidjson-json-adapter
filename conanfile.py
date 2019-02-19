@@ -14,7 +14,7 @@ class RapidjsonadapterConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = "shared=False"
-	sources_folder = "src"
+    sources_folder = "src"
 
     def source(self):
         git = tools.Git(folder=self.sources_folder)
