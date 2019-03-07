@@ -27,7 +27,8 @@ class RapidjsonadapterConan(ConanFile):
         cmake.build()
 
     def package(self):
-        self.copy("*.h", dst="include", src=self.sources_folder)
+        self.copy("*.h", dst="include/JSONAdapterInterface", src=self.sources_folder + "/extern/JSONAdapter/JSONAdapterInterface")
+        self.copy("*.h", dst="include/RapidJSONAdapter", src=self.sources_folder + "/src/RapidJSONAdapter")
         self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.dylib*", dst="lib", keep_path=False)
